@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Pseudo elementos*/
+
+
+.contenedor{ 
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    z-index: 100;   
+} 
+
+.titulo::first-letter{
+    color: black;
+    animation:color-change infinite 1s alternate;
+}
+ 
+
+@keyframes color-change {
+    from { background-color: cyan; }
+    to { background-color: orange; }
+}
+
+.titulo::before{
+    transition: ease 1s ;
+    content:' ';
+    width: calc(100% - 10px);
+    height: calc(100% - 20px );
+    padding: 5px; 
+    position: absolute;
+    top:5px;
+    left: 0px;
+    z-index: -1;
+    scale: 0;
+    background-color: rgba(251, 255, 0, 0.993);
+}
+
+
+.titulo::after{
+    
+    transition: all 1s ease;
+    content:' ';
+    width: 100%;
+    height: 100%; 
+    padding: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    animation: colorR 2s infinite ;
+    z-index: -2;
+}
+@keyframes colorR{
+from{
+    top: 0;
+}
+to{
+    top: 100px;
+}
+}
+.titulo:hover::before  {
+    transform: translateY(0);
+    width: (100% - 10px);
+    scale:1
+}
+
+
+.titulo:hover::after  {
+    transform: translateY(0);
+}
+
