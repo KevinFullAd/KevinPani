@@ -12,29 +12,32 @@
 }
 .head-nav{
     width: 100%; 
-    height: 10vh;  
+    height: 10vh;
+    border: 10px solid white ;  
     background-color:transparent; 
 }
 /* NAME */
 
 .name-container{  
     position: relative;  
-    height: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;  
     z-index: 10;
+    width: 100%; 
+    text-align: center;
 }
 
-.name-link-container{ 
-    height:3rem;
+.name-link-container{
+    height:100%;
     display: flex;
-    align-items: end; 
+    align-items: end;  
 }
 
 .name-link{  
     text-decoration: none;
-    font-size: 3em; 
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-size: 2em; 
     font-weight: bolder;   
     color: rgb(226, 226, 226);
     transition:text-shadow  .3s ease;
@@ -44,8 +47,7 @@
 .name-link:hover{ 
     text-shadow:-2px 1px rgb(255, 75, 9), 1px -1px rgba(255, 255, 255, 0.568), 0 0 3px orangered ;
 }
-
-
+ 
 /* Introducing me */
 
 .introducing-myself{ 
@@ -60,58 +62,42 @@
     padding: 10px;
 }  
 .introducing-text{
+    height: auto;    
     display: flex;
     flex-direction: column;  
-    height: auto;    
-    overflow: hidden; 
+    overflow: hidden;   
 } 
 .introducing-text .x-text{
-    font-size: 1.6em;
+    font-size: 6vw;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     color: transparent;  
     font-family: 'Montserrat', sans-serif;     
-    width: 100%; 
-    padding-left: 4px;
-}   
-.myself{ 
-    display: flex;
-    justify-content: end;
-    position: relative;  
-    
+    width: 100%;   
+    z-index: 10; 
+    padding-left: 1%;
+    margin-bottom: 2%;
+}      
+.myself{
+    padding-bottom: 7px;
 }
-
 .myself span{ 
-    color: #EB3E01;
-    font-size: 19vw;
-    line-height: .9em;
-    text-align: start;
-} 
-.first-name{    
-    width: 100%;
-    height: 30%; 
-    display: flex;
-    align-items: center;  
-    
-    font-family: 'Montserrat', sans-serif;  
-    letter-spacing: -3px; 
-    z-index: -1;
-    
+    font-size:17vw; 
+    line-height: .8em;
+    text-align: start; 
+    font-weight: bold; 
 }
-
-.first-name p{
-    text-transform: uppercase;
+.myself span:nth-child(2){ 
+    color: #EB3E01;
+}   
+.myself span:nth-child(3){
+    color: white;  
+    font-size:18vw; 
+}   
+.myself p{ 
+    font-weight: bold;
     color:white;
-    width: 100%;
-    transform: scaleY(150%);
-    
-    margin-bottom:5% ;
-    font-size:17vw;
-    display: flex;
-    align-items: center;
-    justify-content: start; 
-
- 
-    text-rendering: optimizeSpeed;
+    width: 100%;  
+    font-size: 18vw;
 }
 
 .orbital1{ 
@@ -126,8 +112,8 @@
     height: 500px;
     width: 500px; 
     position: absolute;
-    top: -30%;
-    right: -70%;  
+    top: -20vh;
+    right: -30vh;  
     background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 7.29px) calc(15.77% - -6.85px),calc(51.57% - 0.31px) calc(0.02% - -10.00px),calc(15.77% - -6.85px) calc(13.55% - -7.29px),calc(0.02% - -10.00px) calc(48.43% - -0.31px),calc(13.55% - -7.29px) calc(84.23% - 6.85px),calc(48.43% - -0.31px) calc(99.98% - 10.00px),calc(84.23% - 6.85px) calc(86.45% - 7.29px),calc(99.98% - 10.00px) calc(51.57% - 0.31px),calc(86.45% - 7.29px) calc(15.77% - -6.85px));
     animation: rotate360 linear infinite 30s;
     filter: brightness(.8);
@@ -137,8 +123,8 @@
     height: 300px;
     width: 300px; 
     position: absolute;
-    top: 10%;
-    right:-50%;  
+    top: 20vh;
+    right:-20vh;  
     background-image:  radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
     clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 13.12px) calc(15.77% - -12.32px),calc(51.57% - 0.57px) calc(0.02% - -17.99px),calc(15.77% - -12.32px) calc(13.55% - -13.12px),calc(0.02% - -17.99px) calc(48.43% - -0.57px),calc(13.55% - -13.12px) calc(84.23% - 12.32px),calc(48.43% - -0.57px) calc(99.98% - 17.99px),calc(84.23% - 12.32px) calc(86.45% - 13.12px),calc(99.98% - 17.99px) calc(51.57% - 0.57px),calc(86.45% - 13.12px) calc(15.77% - -12.32px));
     animation: rotate360 reverse infinite 25s;
@@ -151,9 +137,9 @@
     height: 100px; 
     border: dotted rgb(253, 253, 253) 8px;
     position: absolute;
-    top: 300px; 
+    top: 20%; 
     z-index: -2; 
-     
+    
     left: 10%;
 } 
 .point-box1A{
@@ -161,13 +147,12 @@
     height: 100px; 
     border: dotted rgba(255, 124, 2, 0.938) 8px;
     position: absolute;
-    top: 300px;
+    top: 20%; 
     margin-left: -2px;
     z-index: -2;  
 
     left: 10%;
-} 
-
+}  
 .point-box2{
     width: 100px;
     height: 20px; 
@@ -180,7 +165,7 @@
 .point-box2a{
     width: 100px;
     height: 20px; 
-    border: dotted rgb(47, 196, 255) 8px;
+    border: dotted #19d1ff 8px;
     position: absolute;
     bottom: -5%;
     margin-bottom: 2px;
@@ -189,47 +174,52 @@
 }
  
 
-@keyframes circle{
-    from{
-        transform: scale(1), rotate(0deg);  
-        filter: brightness(1), blur(3em);
-    }
-    to{
-        transform: scale(2), rotate(360deg); 
-        filter: brightness(.3),blur(3em);
 
+@media screen and (min-width:600px){
+     
+    .myself{   
+        padding-bottom: 20px;
+        background-color: rebeccapurple;
+
+        & .x-text{
+            font-size: 1.2em;
+        }
+        & span{ 
+            font-size: 4em; 
+        } 
+        & span:nth-child(3){
+            font-size: 4.3em;
+            color: rgb(255, 255, 255);
+        }
+        & p{
+            letter-spacing: -10px;
+        }
+    }  
+
+    .job-card{
+        background-color: rgb(51, 58, 153);
+        display: flex;
+        & .job-card-head{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rebeccapurple; 
+            margin-right: 20px;
+        }
+        &.job-card:nth-child(2){
+            flex-direction:row-reverse;  
+            & .job-card-head{
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+    
+        &.job-card-img img{ 
+            border: 2px solid blue;
+        }
     }
 }
-
-@keyframes rotate360{
-    from{
-        rotate:0; 
-    }
-    to{ 
-        rotate:360deg;
-    }
-}
-@keyframes ilumination-text{
-    0%{
-        text-shadow:0px 0px transparent,0px 0px  transparent, 0px 0px  transparent ;
-     }
-    30%{
-        text-shadow:-3px 1px rgb(255, 75, 9), 2px -1px rgba(255, 255, 255, 0.568), 0 0 3px orangered ;
-        
-    }
-    100%{
-        text-shadow:0px 0px transparent,0px 0px  transparent, 0px 0px  transparent ;      
-    }
-} 
-
-@keyframes rotate-text{
-    from{
-        transform: rotate3d(0);
-    }
-    to{
-        transform: rotate3d(360deg);
-
-    }
+@media screen and (min-width:600px){
 }
 /* Experiences */
 .my-experiences{ 
@@ -249,9 +239,8 @@
     color: rgb(255, 255, 255); 
     text-align: center; 
     position: relative;
-    font-size: 9vw; 
-    & span{
-        font-size: 10vw;
+    & span{ 
+        font-size: 48px;
         letter-spacing: -2px; 
         text-transform: uppercase;
         background-color: #FF5719;
@@ -265,17 +254,19 @@
     height: auto;
     position: relative;
     margin-top: 10vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;   
     gap: 30px;
 }
 
 .exp-card{
     width: 100%;
+    max-width: 450px;
+    height: 20em;
     border: 2px solid #a3a3a3; 
     background-color:#1a191d;
     padding: 30px 20px; 
+    margin: auto;
     background-size: contain;
     filter:blur(.5);
     z-index: 1;
@@ -283,26 +274,27 @@
 
 .card-title{
     width: 100%;
-    height: 4em;
+    height: 10vh; 
     margin: auto;
     display: flex;
-    align-items: start; 
+    align-items: center; 
     position: relative;
     text-transform: capitalize;  
 }
 .card-title i{
-    font-size: 10vw;  
+    font-size: 3em;  
     width: 30%;
     text-align: center;
     color:#FFFFFF;
 } 
 
 .card-title p{
-    font-size: 6.6vw;
+    font-size: 100%;
     color: rgb(231, 231, 231);
     font-family: sans-serif;
     font-weight: 600;
-    & span{font-size: 6.6vw;
+    & span{
+        font-size:2em;
         z-index: 10;
         font-family: sans-serif;
         position: relative;
@@ -373,7 +365,7 @@
 .point-box3A{
     width: 20px;
     height: 100px; 
-    border: dotted rgb(28, 191, 255) 8px;
+    border: dotted #19d1ff 8px;
     position: absolute;  
     top: 25%; 
     left: 10%;
@@ -406,17 +398,298 @@
     
     z-index: 0;
 }
-/* Contact*/
 
-.contact{
+/* JOBS */ 
+ .my-jobs{
+    
+    min-height: 100vh;
+    height:auto;
+ }
+
+ .job-title-container{
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5vh;
+}
+.job-title{
+     font-family: "Poppins",Sans-serif;
+     color: rgb(255, 255, 255); 
+     text-align: center; 
+     position: relative;
+     font-size:3em; 
+     & span{
+         font-size: 48px;
+         letter-spacing: -2px; 
+         padding: 2px;
+         text-transform: uppercase;
+         background-color: #02b5e2;
+         box-shadow: 3px -2px white;
+     }
+
+ }
+
+ .jobs-container{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(189, 252, 189);
+    display: flex;
+    flex-direction: column;
+ }
+
+.job-card{  
+    padding: 5vh 10px;
+
+    & .counter{
+        width: 100%;
+        color: white;
+        font-weight: bold;
+    }
+
+    & .job-card-title{ 
+        color: white ;
+        font-weight: bold;
+        line-height: 1em;
+        font-size: 1.9em;
+        margin: .4em 0; 
+        
+        & span {
+            font-size: 1em; 
+            & a{
+                font-size: 1em;
+                color: #FF5719;
+                text-decoration: none; 
+                position: relative; 
+                font-style: oblique 15deg; 
+                transition: text-shadow .5s ease;
+            } 
+            & a::after{
+                content: ' ';
+                width:0;
+                height: 2px;
+                position: absolute;
+                transition: width 1s ease;
+                bottom: 0;
+                left: 0;
+                background-color: #FF5719; 
+            } 
+            & a:hover::after{ 
+                width:100%;   
+            } 
+            & a:hover{   
+                text-shadow: 1px -1px rgb(255, 136, 0), -1px 1px white;
+            } 
+        } 
+    }
+    
+    & .job-card-description{
+        color: white ;
+        font-size: .9em;
+        
+        margin: 5% 0;
+    }
+
+    & .job-card-img{
+        height: 40vh;
+        width: 100%; 
+        & img{ 
+            border-radius: .5em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    }
 }
 
+.job-card-2{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: right;  
+    & .job-card-title{
+        & span{
+            font-size: 1em; 
+            & a{
+                color:#007fd3; 
+            }
+            & a:hover{
+                text-shadow: 1px -1px #0043d3, -1px 1px white; 
+            }
+
+            & a::after{
+                background-color:#0099ff;
+            }
+        } 
+        
+    }
+
+    & .job-card-description{
+        text-align: left;
+    }
+}
+
+@keyframes focus-link{ 
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 100%;
+    }
+    50%{
+        width: 0;
+    }
+}
+
+/* Contact*/ 
+
+.contact{
+    width: 100%; 
+    height: auto;
+    padding: 0 10px;
+    .contact-head{  
+    
+        color: rgb(255, 255, 255); 
+        font-family: "Poppins",Sans-serif;;
+        text-align: center; 
+        position: relative; 
+        padding: 10px; 
+    
+        & span{
+            font-size: 48px;
+            letter-spacing: -2px; 
+            text-transform: uppercase;
+            background-color: #FF5719;
+            box-shadow: 3px -2px white;
+        }    
+
+        & .contact-info{
+            text-align: left;
+        }
+    } 
+
+    .form{ 
+        padding: 10px 0;
+        .form-element{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 10px 0; 
+            
+            & label{
+                width: 100%;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            & input{
+                width: 100%; 
+                padding: 10px; 
+                outline: 0;
+                resize: vertical;
+                background-color: rgba(255, 255, 255, 0.842);
+                border: 0;
+            } 
+        }
+
+        & .form-button{
+            display: flex;
+            justify-content: flex-end; 
+            padding: 10px 0;
+            & button{
+                padding: 5px 15px;
+                border: 0;
+                outline: 0;
+                font-weight: bolder;
+                font-size: 1.1em;
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.8);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+/*  */
 .bye-bye{
     width: 100%;
     height:20vh;
-    background-color: #997e7e;
-    color: #ffffff;
+    padding: 10px 0; 
+    background-color: #1a191d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-media{
+    width: 100%; 
+    height: 2em;
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.media-element{ 
+    height: 100%;
+    & a{ 
+        & img{
+            height: 100%;
+            filter: invert(1);
+        } 
+        & i{
+        font-size: 2em;
+        color:rgb(255, 255, 255);
+        }
+    } 
+}
+
+.copy{ 
+    text-align: center;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+
+
+
+@keyframes circle{
+    from{
+        transform: scale(1), rotate(0deg);  
+        filter: brightness(1), blur(3em);
+    }
+    to{
+        transform: scale(2), rotate(360deg); 
+        filter: brightness(.3),blur(3em);
+
+    }
+}
+@keyframes rotate360{
+    from{
+        rotate:0; 
+    }
+    to{ 
+        rotate:360deg;
+    }
+}
+@keyframes ilumination-text{
+    0%{
+        text-shadow:0px 0px transparent,0px 0px  transparent, 0px 0px  transparent ;
+     }
+    30%{
+        text-shadow:-3px 1px rgb(255, 75, 9), 2px -1px rgba(255, 255, 255, 0.568), 0 0 3px orangered ;
+        
+    }
+    100%{
+        text-shadow:0px 0px transparent,0px 0px  transparent, 0px 0px  transparent ;      
+    }
+} 
+@keyframes rotate-text{
+    from{
+        transform: rotate3d(0);
+    }
+    to{
+        transform: rotate3d(360deg);
+
+    }
 }
