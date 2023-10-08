@@ -66,22 +66,18 @@
     display: flex;
     flex-direction: column;  
     overflow: hidden;   
-} 
-.introducing-text .x-text{
+}  
+.x-text{
     font-size: 6vw;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-    color: transparent;  
-    font-family: 'Montserrat', sans-serif;     
-    width: 100%;   
-    z-index: 10; 
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);  
+    width: 100%; 
     padding-left: 1%;
     margin-bottom: 2%;
-}      
-.myself{
-    padding-bottom: 7px;
-}
+    z-index: 1;
+}       
 .myself span{ 
-    font-size:17vw; 
+    font-size:3em; 
     line-height: .8em;
     text-align: start; 
     font-weight: bold; 
@@ -89,15 +85,12 @@
 .myself span:nth-child(2){ 
     color: #EB3E01;
 }   
-.myself span:nth-child(3){
-    color: white;  
-    font-size:18vw; 
-}   
 .myself p{ 
     font-weight: bold;
     color:white;
     width: 100%;  
-    font-size: 18vw;
+    font-size: 3.5em;
+    padding-bottom: 20px;
 }
 
 .orbital1{ 
@@ -112,24 +105,25 @@
     height: 500px;
     width: 500px; 
     position: absolute;
-    top: -20vh;
+    top: -30vh;
     right: -30vh;  
-    background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 7.29px) calc(15.77% - -6.85px),calc(51.57% - 0.31px) calc(0.02% - -10.00px),calc(15.77% - -6.85px) calc(13.55% - -7.29px),calc(0.02% - -10.00px) calc(48.43% - -0.31px),calc(13.55% - -7.29px) calc(84.23% - 6.85px),calc(48.43% - -0.31px) calc(99.98% - 10.00px),calc(84.23% - 6.85px) calc(86.45% - 7.29px),calc(99.98% - 10.00px) calc(51.57% - 0.31px),calc(86.45% - 7.29px) calc(15.77% - -6.85px));
+    background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);
+    clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 7.29px) calc(15.77% - -6.85px),calc(51.57% - 0.31px) calc(0.02% - -10.00px),calc(15.77% - -6.85px) calc(13.55% - -7.29px),calc(0.02% - -10.00px) calc(48.43% - -0.31px),calc(13.55% - -7.29px) calc(84.23% - 6.85px),calc(48.43% - -0.31px) calc(99.98% - 10.00px),calc(84.23% - 6.85px) calc(86.45% - 7.29px),calc(99.98% - 10.00px) calc(51.57% - 0.31px),calc(86.45% - 7.29px) calc(15.77% - -6.85px));
     animation: rotate360 linear infinite 30s;
     filter: brightness(.8);
-    z-index: 1;
+    z-index: -1;
 }
-.element-orb2{
+.element-orb1a{
     height: 300px;
     width: 300px; 
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     right:-20vh;  
     background-image:  radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
     clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 13.12px) calc(15.77% - -12.32px),calc(51.57% - 0.57px) calc(0.02% - -17.99px),calc(15.77% - -12.32px) calc(13.55% - -13.12px),calc(0.02% - -17.99px) calc(48.43% - -0.57px),calc(13.55% - -13.12px) calc(84.23% - 12.32px),calc(48.43% - -0.57px) calc(99.98% - 17.99px),calc(84.23% - 12.32px) calc(86.45% - 13.12px),calc(99.98% - 17.99px) calc(51.57% - 0.57px),calc(86.45% - 13.12px) calc(15.77% - -12.32px));
     animation: rotate360 reverse infinite 25s;
     filter: brightness(.7);
-    z-index: 2;
+    z-index: -1;
 }   
 
 .point-box1{
@@ -175,58 +169,14 @@
  
 
 
-@media screen and (min-width:600px){
-     
-    .myself{   
-        padding-bottom: 20px;
-        background-color: rebeccapurple;
 
-        & .x-text{
-            font-size: 1.2em;
-        }
-        & span{ 
-            font-size: 4em; 
-        } 
-        & span:nth-child(3){
-            font-size: 4.3em;
-            color: rgb(255, 255, 255);
-        }
-        & p{
-            letter-spacing: -10px;
-        }
-    }  
-
-    .job-card{
-        background-color: rgb(51, 58, 153);
-        display: flex;
-        & .job-card-head{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            background-color: rebeccapurple; 
-            margin-right: 20px;
-        }
-        &.job-card:nth-child(2){
-            flex-direction:row-reverse;  
-            & .job-card-head{
-                margin-right: 0;
-                margin-left: 20px;
-            }
-        }
-    
-        &.job-card-img img{ 
-            border: 2px solid blue;
-        }
-    }
-}
-@media screen and (min-width:600px){
-}
 /* Experiences */
 .my-experiences{ 
     width: 100%;
     height:auto;   
-    padding: 10px;
-    overflow: hidden;
+    padding: 10px; 
+    position: relative; 
+    overflow: hidden;  
 } 
 
 .exp-title-container{
@@ -235,10 +185,11 @@
 
 .exp-title{  
     font-family: "Poppins",Sans-serif;;
-    margin-top: 20%;
+    margin-top: 5%;
     color: rgb(255, 255, 255); 
     text-align: center; 
     position: relative;
+    z-index: 2;
     & span{ 
         font-size: 48px;
         letter-spacing: -2px; 
@@ -262,19 +213,19 @@
 .exp-card{
     width: 100%;
     max-width: 450px;
-    height: 20em;
+    height: 350px;
+    padding: 30px 20px; 
+    margin: auto; 
+ 
+
     border: 2px solid #a3a3a3; 
     background-color:#1a191d;
-    padding: 30px 20px; 
-    margin: auto;
-    background-size: contain;
     filter:blur(.5);
-    z-index: 1;
-}
 
+    z-index: 1;
+} 
 .card-title{
-    width: 100%;
-    height: 10vh; 
+    width: 100%;  
     margin: auto;
     display: flex;
     align-items: center; 
@@ -340,7 +291,8 @@
 .focus-message {
     color: #a3a3a3;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    height: 100%; 
 }
 
 .focus-message span{ 
@@ -399,9 +351,38 @@
     z-index: 0;
 }
 
-/* JOBS */ 
- .my-jobs{
+.orbital2{ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.element-orb2{
+    height: 300px;
+    width: 300px;
+    bottom: 10vh;
+    left: -10vh;
+    position: absolute;
+    background-image:  radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+    clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 13.12px) calc(15.77% - -12.32px),calc(51.57% - 0.57px) calc(0.02% - -17.99px),calc(15.77% - -12.32px) calc(13.55% - -13.12px),calc(0.02% - -17.99px) calc(48.43% - -0.57px),calc(13.55% - -13.12px) calc(84.23% - 12.32px),calc(48.43% - -0.57px) calc(99.98% - 17.99px),calc(84.23% - 12.32px) calc(86.45% - 13.12px),calc(99.98% - 17.99px) calc(51.57% - 0.57px),calc(86.45% - 13.12px) calc(15.77% - -12.32px));
+    animation: rotate360 linear infinite 30s;
+}
+.element-orb2a{ 
     
+    height: 500px;
+    width: 500px;
+    top: 10vh;
+    right: -30vh;
+    position: absolute;
+    background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 7.29px) calc(15.77% - -6.85px),calc(51.57% - 0.31px) calc(0.02% - -10.00px),calc(15.77% - -6.85px) calc(13.55% - -7.29px),calc(0.02% - -10.00px) calc(48.43% - -0.31px),calc(13.55% - -7.29px) calc(84.23% - 6.85px),calc(48.43% - -0.31px) calc(99.98% - 10.00px),calc(84.23% - 6.85px) calc(86.45% - 7.29px),calc(99.98% - 10.00px) calc(51.57% - 0.31px),calc(86.45% - 7.29px) calc(15.77% - -6.85px));
+    clip-path: polygon(99.98% 51.57%,84.23% 86.45%,48.43% 99.98%,13.55% 84.23%,0.02% 48.43%,15.77% 13.55%,51.57% 0.02%,86.45% 15.77%,99.98% 51.57%,calc(86.45% - 13.12px) calc(15.77% - -12.32px),calc(51.57% - 0.57px) calc(0.02% - -17.99px),calc(15.77% - -12.32px) calc(13.55% - -13.12px),calc(0.02% - -17.99px) calc(48.43% - -0.57px),calc(13.55% - -13.12px) calc(84.23% - 12.32px),calc(48.43% - -0.57px) calc(99.98% - 17.99px),calc(84.23% - 12.32px) calc(86.45% - 13.12px),calc(99.98% - 17.99px) calc(51.57% - 0.57px),calc(86.45% - 13.12px) calc(15.77% - -12.32px));
+
+    animation: rotate360 linear infinite 30s;
+}   
+
+/* JOBS */ 
+ .my-jobs{ 
     min-height: 100vh;
     height:auto;
  }
@@ -539,31 +520,28 @@
 
 /* Contact*/ 
 
-.contact{
+.contact-title{ 
     width: 100%; 
     height: auto;
     padding: 0 10px;
-    .contact-head{  
-    
-        color: rgb(255, 255, 255); 
-        font-family: "Poppins",Sans-serif;;
-        text-align: center; 
-        position: relative; 
-        padding: 10px; 
-    
-        & span{
-            font-size: 48px;
-            letter-spacing: -2px; 
-            text-transform: uppercase;
-            background-color: #FF5719;
-            box-shadow: 3px -2px white;
-        }    
-
-        & .contact-info{
-            text-align: left;
-        }
+    font-family: "Poppins",Sans-serif;;
+    margin-top: 5%;
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    position: relative;
+    z-index: 2;
+    & span{ 
+        font-size: 42px;
+        letter-spacing: -2px; 
+        text-transform: uppercase;
+        background-color: #FF5719;
+        box-shadow: 3px -2px white;
     } 
+} 
 
+.contact-info{
+    text-align: left;
+}
     .form{ 
         padding: 10px 0;
         .form-element{
@@ -605,16 +583,9 @@
             }
         }
 
-    }
-}
-
-
-
-
-
-
-
+} 
 /*  */
+
 .bye-bye{
     width: 100%;
     height:20vh;
@@ -630,6 +601,8 @@
     height: 2em;
     display: flex; 
     justify-content: space-evenly; 
+    max-width: 400px;
+    margin: auto;
 }
 .media-element{ 
     height: 100%;
@@ -651,8 +624,73 @@
     color: rgb(150, 150, 150);
 }
 
+@media screen and (min-width:600px){
+     
+    .myself{     
+        & .x-text{
+            font-size: 1.2em;
+        }
+        & span{ 
+            font-size: 3.7em; 
+        }  
+        & p{
+            font-size: 5em;
+            line-height: .7em;
+            letter-spacing: -10px; 
+            padding-top: 10px;
+        }
+    }  
 
+    .job-card{ 
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+        & .job-card-head{
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            margin-right: 20px;
+        }
+        &.job-card:nth-child(2){
+            flex-direction:row-reverse;  
+            & .job-card-head{
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+     
+    }
+} 
+@media screen and (min-width:700px){
 
+    .element-orb1{
+        top: -15vh;
+        right: -10vh;
+    }
+    .element-orb1a{
+        top: 20vh;
+        right: -15vh;
+    }
+
+    .contact{
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+        gap: 20px;
+        & .contact-head{ 
+            max-width: 300px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        & .form{ 
+            width:100%;
+
+        }
+    }
+}
 @keyframes circle{
     from{
         transform: scale(1), rotate(0deg);  
